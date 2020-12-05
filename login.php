@@ -16,7 +16,7 @@ if(isset($_POST['username'],$_POST['password'])){
 		header('Location: index.php');
 		exit;
 	}else{
-		echo '<div class="loginecho alert alert-danger" style="margin: 10px auto; width: 360px;">Login failed</div>';
+		echo '<div class="loginecho alert alert-danger" style="margin: 10px auto; width: 360px;">Erreur d\'identification</div>';
 	}
 	
 }
@@ -34,12 +34,12 @@ if(isset($_POST['username'],$_POST['password'])){
 					<form style="width: 360px; margin: 10px auto;" accept-charset="UTF-8" role="form" method="post" action="login.php">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="Username" name="username" type="text">
+								<input class="form-control" placeholder="Non d'utilisteur" name="username" type="text">
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Password" name="password" type="password" value="">
+								<input class="form-control" placeholder="Mot de passe" name="password" type="password" value="">
 							</div>
-								<input class="btn btn-lg btn-block" style="background-color: #38abe3; color: #fff" type="submit" value="Login">
+								<input class="btn btn-lg btn-block" style="background-color: #38abe3; color: #fff" type="submit" value="Connexion">
 						</fieldset>
 					</form>	
 
