@@ -923,20 +923,20 @@ exit; // prevent loading entire page in the echo
 		<div class="col-4">		
 							
 			<!-- ****************************** ANCHOR FOR OPEN MODAL CREATE FOLDER ***************************-->
-			<a class="btn  createfolder" href="#createfolder-modal">Create Dir</a>
+			<a class="btn  createfolder" href="#createfolder-modal">Créer répertoire</a>
 			
 			<!-- MODAL CREATE FOLDER -->
 			<div id="createfolder-modal" class="modalDialog modalDialogCreate">
 				<div>
-					<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+					<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 					<br />
-					<h4>Create Directory</h4>
+					<h4>Créer le répertoire</h4>
 			
 							 
 						<form class="rafform"  action="" method="post">
 							<input type="text" class="mkdir form-control" name="dirname"  placeholder="only a-z, A-Z, 0-9, -, _" />
 						
-							<input type="submit" class="submitmodal createfolder btn " name="mkdir" value="Create" />
+							<input type="submit" class="submitmodal createfolder btn " name="mkdir" value="Créer" />
 						</form>
 				</div>
 			</div>
@@ -946,14 +946,14 @@ exit; // prevent loading entire page in the echo
 			<!-- ******************************************  END MODAL CREATE FOLDER ******************************************* -->	
 				
 			<!-- ****************************************** ANCHOR FOR OPEN MODAL UPLOAD FILES **********************************-->
-			<a class="btn  uploadfiles" href="#uploadfiles-modal">Upload</a>
+			<a class="btn  uploadfiles" href="#uploadfiles-modal">Envoi</a>
 			
 			<!-- MODAL UPLOAD FILES -->
 			<div id="uploadfiles-modal" class="modalDialog modalDialogUpload">
 				<div>
-					<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+					<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 					<br />
-					<h4>Upload Files</h4>
+					<h4>Envoyer des fichiers </h4>
 					
 					<!-- Info -->
 					<?php 
@@ -968,10 +968,10 @@ exit; // prevent loading entire page in the echo
 					<br /><br />
 					<div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
 					  <div id="drag_upload_file">				  													  				  				    
-						<p>DROP FILE(S) HERE</p>
-						<p>or</p>
+						<p>DÉPOSEZ LES FICHIERS ICI</p>
+						<p>ou</p>
 						
-						<p><input class="browse btn" type="button" id="browse" value="Browse" onclick="file_explorer();"></p>
+						<p><input class="browse btn" type="button" id="browse" value="Parcourir" onclick="file_explorer();"></p>
 						<input type="file" id="selectfile" name="upload" value="" multiple>
 						
 					  </div>
@@ -986,7 +986,7 @@ exit; // prevent loading entire page in the echo
 		<div class="col-4">
 			<!-- SEARCH INPUT-->
 			<div class="search-nav">
-			<input type="text" class="search form-control" id="search" title = "Live Search Files"  placeholder='Search in dir' />
+			<input type="text" class="search form-control" id="search" title = "Recherche de fichiers en direct"  placeholder='Rechercher dans le répertoire' />
 			
 			<!-- NAVIGATE -->
 			<a class="btn navigate" href="#navigate-modal">Navigate</a>
@@ -998,7 +998,7 @@ exit; // prevent loading entire page in the echo
 		
 		<!-- LOGOUT BUTTON -->
 		<div class="col-4">						
-			<a class="logout btn btn-danger float-right" title="Logout" href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
+			<a class="logout btn btn-danger float-right" title="Déconnexion" href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
 		</div> <!-- end col -->
 		
 		
@@ -1013,21 +1013,21 @@ exit; // prevent loading entire page in the echo
 			<div class="col">
 
 				<div class="cb-buttons hide">					
-					<b class="cb-actions-text">Checkbox actions:</b>&nbsp;		
-					<a href="#delete" class="cb_delete" title="Delete"><i class="fas fa-trash-alt"></i></a>
+					<b class="cb-actions-text">Actions des cases à cocher:</b>&nbsp;		
+					<a href="#delete" class="cb_delete" title="Supprimer"><i class="fas fa-trash-alt"></i></a>
 					
-					<a href="#download" class="cb_down" title="Download"><i class="fas fa-download"></i></a>
+					<a href="#download" class="cb_down" title="Télécharger"><i class="fas fa-download"></i></a>
 					
-					<a href="#cb_copy" class="cbcopy-anchor" title="Copy"><i class="fas fa-copy"></i></a>
+					<a href="#cb_copy" class="cbcopy-anchor" title="Copier"><i class="fas fa-copy"></i></a>
 					
 						<!-- MODAL COPY FILE -->
 						<div id="cb_copy" class="modalDialog">
 							<div>
-							<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+							<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 							
 							<br />
-							<h4>Copy Files/Folders</h4>
-							Click on one of the folders below to set the destination and press <b>COPY</b> button (Home is empty)<br /><br />
+							<h4>Copier des fichiers/dossiers</h4>
+							Cliquez sur l'un des dossiers ci-dessous pour définir la destination et appuyez sur le bouton <b>COPIER</b> (l'accueil est vide)<br /><br />
 							
 							<span class="li-viewfolders set-value" data-value=""><i class="fas fa-home"></i></span>	<!-- Home icon -->	
 							<div class="tree">						
@@ -1035,38 +1035,38 @@ exit; // prevent loading entire page in the echo
 
 							</div>
 							
-							<h5>Copy selected files to:</h5>
+							<h5>Copiez les fichiers sélectionnés vers:</h5>
 								<form class="rafform" method="post" action="">
 									
 									<input type="text" class="set-input cbdestination form-control" name="copyfile-destination" value="" />
 								
-									<input type="submit" class="cb_copy_move submitmodal rafcopy copyfile btn" value="Copy" />
+									<input type="submit" class="cb_copy_move submitmodal rafcopy copyfile btn" value="Copier" />
 								</form> 
 							</div>
 						</div>
 					
-					<a href="#cb_move" class="cbmove-anchor" title="Move"><i class="fas fa-file-export"></i></a>
+					<a href="#cb_move" class="cbmove-anchor" title="Déplacer"><i class="fas fa-file-export"></i></a>
 					
 						<!-- MODAL MOVE FILE -->
 						<div id="cb_move" class="modalDialog">
 							<div>
-							<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+							<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 							
 							<br />
-							<h4>Move Files/Folders</h4>
-							Click on one of the folders below to set the destination and press <b>MOVE</b> button (Home is empty)<br /><br />
+							<h4>Déplacer Fichiers/Dossiers</h4>
+							Cliquez sur l'un des dossiers ci-dessous pour définir la destination et appuyez sur le bouton <b>DÉPLACER</b> (l'accueil est vide)<br /><br />
 							<span class="li-viewfolders set-value" data-value=""><i class="fas fa-home"></i></span>	<!-- Home icon -->	
 							<div class="tree">						
 							<?php viewFolders($MainDir); ?> <!-- treeview -->
 
 							</div>
 							
-							<h5>Moveselected files to:</h5>
+							<h5>Déplacer les fichiers sélectionnés vers:</h5>
 								<form class="rafform" method="post" action="">
 									
 									<input type="text" class="set-input new_destination form-control" name="cbmovefile-destination" value="" />
 								
-									<input type="submit" class="cb_copy_move submitmodal rafmove movefile btn" value="Move" />
+									<input type="submit" class="cb_copy_move submitmodal rafmove movefile btn" value="Déplacer" />
 								</form> 
 							</div>
 						</div>						
@@ -1086,16 +1086,16 @@ exit; // prevent loading entire page in the echo
 			 
 			 
 				if($LimitStorage === FALSE) { // editable in settings						
-					echo 'Used<b> '.round($SumStorage/1048576, 2).' </b>MB of Unlimited';													
+					echo 'Utilisé<b> '.round($SumStorage/1048576, 2).' </b>MB de Illimité';													
 				}
 				elseif(round($UsedStorage, 2) < 100) {
-					echo 'Used<b> '.round($SumStorage/1048576, 2).' </b>MB of <b>'.round($LimitStorage/1048576, 2).'</b> MB&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i>&nbsp;&nbsp;';
+					echo 'Utilisé<b> '.round($SumStorage/1048576, 2).' </b>MB de <b>'.round($LimitStorage/1048576, 2).'</b> MB&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i>&nbsp;&nbsp;';
 					echo '<b>'.round($UsedStorage, 2).' %</b><br />';
 				}	
 				else {
 				// in css; max_exceed is red colored
-					echo 'Used<b class="max_exceed"> '.round($SumStorage/1048576, 2).' </b>MB of <b>'.round($LimitStorage/1048576, 2).'</b> MB<br />';
-					echo '<b class="max_exceed">'.round($UsedStorage, 2).' %.<br /> You have reached your available storage!</b>';
+					echo 'Utilisé<b class="max_exceed"> '.round($SumStorage/1048576, 2).' </b>MB de <b>'.round($LimitStorage/1048576, 2).'</b> MB<br />';
+					echo '<b class="max_exceed">'.round($UsedStorage, 2).' %.<br /> Vous avez atteint votre espace de stockage disponible!</b>';
 				
 				
 					}
@@ -1161,13 +1161,13 @@ exit; // prevent loading entire page in the echo
 						$numberFiles = $numberTotal - $numberFolders;
 						?>
 					<td class="td-general-info">							
-							<?php echo 'Folders: <b>' . $numberFolders . '</b>'; ?>
+							<?php echo 'Dossiers: <b>' . $numberFolders . '</b>'; ?>
 					</td>	
 					<td class="td-general-info">	
-							<?php echo 'Files: <b>' . $numberFiles . '</b>'; ?>
+							<?php echo 'Fichiers: <b>' . $numberFiles . '</b>'; ?>
 					</td>			
 					<td class="td-general-info">	
-							<?php echo 'Size: <b>' . sizeFormat(recursive_directory_size($dir)) . '</b>'; ?>
+							<?php echo 'Taille: <b>' . sizeFormat(recursive_directory_size($dir)) . '</b>'; ?>
 					</td>	
 					
 				</tr> <!-- end general info -->
@@ -1187,13 +1187,13 @@ exit; // prevent loading entire page in the echo
 				
 				<tr class="first-row">
 					<th class="checkbox header-item"></th>				
-					<th class="name header-item"><a id="name" class="filter-link" href="#">Name<i class="fas fa-sort"></i></a></th>	
+					<th class="name header-item"><a id="name" class="filter-link" href="#">Nom<i class="fas fa-sort"></i></a></th>	
 					<th class="extension header-item"><a id="extension" class="filter-link" href="#">Ext<i class="fas fa-sort"></i></a></th>						
 					<th class="modified header-item"><a id="modified" class="filter-link filter-link-number" href="#">Modif<i class="fas fa-sort"></i></a></th>					
-					<th class="size header-item"><a id="size" class="filter-link filter-link-number" href="#">Size<i class="fas fa-sort"></i></a></th>
-					<th class="share header-item"><a id="share" class="filter-link" href="#">Share<i class="fas fa-sort"></i></a></th>
-					<th class="view header-item"><a id="view" class="filter-link" href="#">View<i class="fas fa-sort"></i></a></th>							
-					<th class="rename header-item">Ren</th>					
+					<th class="size header-item"><a id="size" class="filter-link filter-link-number" href="#">Taille<i class="fas fa-sort"></i></a></th>
+					<th class="share header-item"><a id="share" class="filter-link" href="#">Partager<i class="fas fa-sort"></i></a></th>
+					<th class="view header-item"><a id="view" class="filter-link" href="#">Voir<i class="fas fa-sort"></i></a></th>							
+					<th class="rename header-item">Renommer</th>					
 				</tr>
 								
 				</thead>
@@ -1258,7 +1258,7 @@ exit; // prevent loading entire page in the echo
 					<td class="td-date">
 						<!-- raw size for sorting only-->
 						<span class="table-data hide"><?php echo filemtime($dir.'/'.$file); ?></span>
-						<?php echo date("M d 'y H:i",filemtime($dir.'/'.$file)); ?>
+						<?php echo date("d M Y H:i",filemtime($dir.'/'.$file)); ?>
 					</td>
 															
 					<!-- SIZE-->	
@@ -1288,13 +1288,13 @@ exit; // prevent loading entire page in the echo
 						<div id="<?php echo '/share-'.$file; ?>" class="modalDialog modalDialogShare">
 						
 							<div>
-								<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+								<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 								<br />
-								<h4>Share</h4>
-								Name: <b><?php echo basename($dir.'/'.$file); ?></b><br /><br />
-								Link below to share (click to select):<br />
+								<h4>Partager</h4>
+								Nom: <b><?php echo basename($dir.'/'.$file); ?></b><br /><br />
+								Lien ci-dessous pour partager (cliquez pour sélectionner):<br />
 								<div class="select-all">								
-									<span title="Select me by click"><b><?php echo preg_replace('#^' . preg_quote($_SERVER['DOCUMENT_ROOT']) . '[\\\\/]#', "{$_SERVER['HTTP_HOST']}/", realpath($dir.'/'.$file)) . "\n"; ?></b></span>
+									<span title="Sélectionnez-moi en cliquant"><b><?php echo preg_replace('#^' . preg_quote($_SERVER['DOCUMENT_ROOT']) . '[\\\\/]#', "{$_SERVER['HTTP_HOST']}/", realpath($dir.'/'.$file)) . "\n"; ?></b></span>
 								</div>								
 								<br />
 							</div>	
@@ -1323,7 +1323,7 @@ exit; // prevent loading entire page in the echo
 									<div id="<?php echo 'image-' . $file; ?>" class="modalDialog">
 									
 										<div>
-											<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+											<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 											<br />
 											<h4><?php echo basename($dir.'/'.$file); ?></h4>
 											<img src="<?php echo $dir.'/'.$file; ?>" title="<?php echo basename($dir.'/'.$file); ?>" style="width: 100%" />
@@ -1344,7 +1344,7 @@ exit; // prevent loading entire page in the echo
 									<!-- MODAL MP3 -->						   
 									<div id="<?php echo 'mp3-' . $file; ?>" class="modalDialog">
 										<div>
-											<a href="#close" title="Close" class="closemodal no-icon"><i class="fas fa-times"></i></a>
+											<a href="#close" title="Fermer" class="closemodal no-icon"><i class="fas fa-times"></i></a>
 											<br />
 											<h4><?php echo basename($dir . '/' . $file); ?></h4>
 											<audio width="320" controls>
@@ -1366,7 +1366,7 @@ exit; // prevent loading entire page in the echo
 									<!-- MODAL MP4 -->						   
 									<div id="<?php echo 'mp4-' . $file; ?>" class="modalDialog">
 										<div>
-											<a href="#close" title="Close" class="closemodal no-icon"><i class="fas fa-times"></i></a>
+											<a href="#close" title="Fermer" class="closemodal no-icon"><i class="fas fa-times"></i></a>
 											<br />
 											<h4><?php echo basename($dir . '/' . $file); ?></h4>
 											<video width="320" controls>
@@ -1398,7 +1398,7 @@ exit; // prevent loading entire page in the echo
 							<!-- MODAL EDIT -->						   
 							<div id="<?php echo 'edit-' . $file; ?>" class="modalDialog">
 								<div>
-									<a href="#close" title="Close" class="closemodal no-icon"><i class="fas fa-times"></i></a>
+									<a href="#close" title="Fermer" class="closemodal no-icon"><i class="fas fa-times"></i></a>
 									<br />
 									<h4><?php echo basename($dir . '/' . $file); ?></h4>
 									<form class="rafform" method="post" action="">
@@ -1423,7 +1423,7 @@ exit; // prevent loading entire page in the echo
 									<div id="<?php echo 'zip-' . $file; ?>" class="modalDialog">
 									
 										<div>
-											<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+											<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 											<br />
 											<h4>Content of <b><?php echo basename($dir . '/' . $file); ?></b>:</h4>
 											<br />
@@ -1455,7 +1455,7 @@ exit; // prevent loading entire page in the echo
 												<input type="hidden" name="extractfile" value="<?php echo $dir.'/'.$file; ?>" />
 												<input type="submit" class="submitmodal rafextract btn" name="extract" value="Yes" />												
 											</form>
-											<a href="#close" title="Close" class="closemodal btn btn-danger btn-cancel">Cancel</a>
+											<a href="#close" title="Fermer" class="closemodal btn btn-danger btn-cancel">Cancel</a>
 												
 											</form>
 																	
@@ -1479,7 +1479,7 @@ exit; // prevent loading entire page in the echo
 						<!-- MODAL RENAME -->	
 						<div id="<?php echo 'rename-' . $file; ?>" class="modalDialog">
 							<div>
-								<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+								<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 								<br />
 								<h4>Rename File/Folder</h4>
 								Current name: <b><?php echo basename($dir.'/'.$file); ?></b><br />
@@ -1507,7 +1507,7 @@ exit; // prevent loading entire page in the echo
 			<!-- MODAL NAVIGATE; dynamically reloaded, so must be part of div table-responsive-->
 			<div id="navigate-modal" class="modalDialog">
 				<div>
-					<a href="#close" title="Close" class="closemodal"><i class="fas fa-times"></i></a>
+					<a href="#close" title="Fermer" class="closemodal"><i class="fas fa-times"></i></a>
 					<br />
 					<h4>Click on Directory to navigate</h4>
 					<br />
